@@ -1,6 +1,6 @@
-# Bonjour Makkam
+# BonjourMakam
 
-ISMIR HAMR 2018 hack
+ISMIR HAMR 2018 hack for "MIR tools for non-western music exploration"
 
 ## Setup
 
