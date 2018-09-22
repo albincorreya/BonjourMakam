@@ -8,3 +8,8 @@ scikit-learn>=0.19.1
 scipy>=1.1.0
 virtualenv>=16.0.0
 ipython>=5.5.0
+dash==0.27.0
+dash-core-components==0.30.2
+dash-html-components==0.13.2
+dash-renderer==0.14.1
+dash-table-experiments==0.6.0
