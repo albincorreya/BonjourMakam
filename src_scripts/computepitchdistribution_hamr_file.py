@@ -99,7 +99,7 @@ def main(number_of_bins,
         = hist_val_ls
 
     # writing the values to the csv file
-    #write_to_csv_hamr(features_save_name, pitch_column_names, pitch_val)
+    write_to_csv_hamr(features_save_name, pitch_column_names, pitch_val)
 
     return pitch_val
 
