@@ -32,9 +32,8 @@ RUN apt-get update && apt-get install -y \
     python3 \
     build-essential \
     python3-setuptools \
-    python-dev
-
-RUN easy_install3 pip
+    python-dev \
+    && easy_install3 pip
 
 COPY requirements.txt /tmp/requirements.txt
 
