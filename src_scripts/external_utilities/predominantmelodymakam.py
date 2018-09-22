@@ -75,11 +75,10 @@ class PredominantMelodyMakam(object):
                 'essentiaVersion': essentia_version,
                 'citation': citation}
 
-    def run(self, audio):
+    def run(self, fname):
         # load audio and eqLoudness
         # Note: MonoLoader resamples the audio signal to 44100 Hz by default
-        # audio = estd.MonoLoader(filename=fname)()
-        audio = e_array(audio)
+        audio = estd.MonoLoader(filename=fname)()
         audio = estd.EqualLoudness()(audio)
 
         contours_bins, contours_start_times, contour_saliences, duration = \
