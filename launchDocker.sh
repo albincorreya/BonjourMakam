@@ -9,5 +9,5 @@ echo "Building docker image"
 docker build -t hamrdocker .
 
 echo "Launching docker.."
-docker run -it --rm --name hamr_docker  -v $1:/srv/workspace/ hamrdocker bash
+docker run -it --rm -p 8000:8008 --name hamr_docker  -v $1:/srv/workspace/ hamrdocker bash
 

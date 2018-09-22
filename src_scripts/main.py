@@ -16,7 +16,7 @@ from librosa.core import load
 import wave
 
 
-import ipdb
+#import ipdb
 
 
 app = dash.Dash()
@@ -98,7 +98,7 @@ app.css.append_css({
 
 if __name__ == '__main__':
     ap = ArgumentParser()
-    ap.add_argument('-i', '--ip', dest='ip', default="localhost")
+    ap.add_argument('-i', '--ip', dest='ip', default="0.0.0.0")
     ap.add_argument('-p', '--port', dest='port', default=8008)
     args = ap.parse_args()
     app.run_server(debug=True, host=args.ip, port=args.port)
